@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo,
+.navbar-toggle {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: block;
+  list-style: none;
+}
+
+.nav-link-item {
+  margin-left: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.nav-link-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero,
+.footer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  background-image: url("https://source.unsplash.com/weekly?yoga");
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.footer-container,
+.hero-container {
+  border: 0.5rem solid #fff;
+  padding: 1rem;
+}
+
+.hero-title,
+.hero-subtitle,
+.footer-title,
+.footer-subtitle {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 2.7rem;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+}
+
+.hero-subtitle,
+.footer-subtitle {
+  font-weight: 100;
+}
+
+#projects {
+  height: 100vh;
+  background-color: #121212;
+}
+
+@media (min-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-link-item {
+    margin: 0 0 0 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .nav-link-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
